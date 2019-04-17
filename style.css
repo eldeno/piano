@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background-color: rgb(26, 26, 26);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Pacifico', sans-serif;
+  font-size: 40px;
+  color: white;
+  margin: 20px 0;
+}
+
+.keyboard {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  height: 350px;
+  width: 700px;
+  background-color: rgb(10, 10, 10);
+}
+
+.key-box {
+  position: relative;
+  height: 290px;
+  width: 100%;
+}
+
+.key {
+  position: absolute;
+  width: 81px;
+  height: 280px;
+  background-color: rgb(250, 243, 241);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 0 10px 0 rgb(218, 211, 209);
+}
+
+.key:hover {
+  cursor: pointer;
+  top: 2px;
+}
+
+.key:active {
+  top: 6px;
+}
+
+.keyboard-sustenido {
+  position: absolute;
+  display: flex;
+}
+
+.keySB {
+  position: absolute;
+  width: 41px;
+  height: 180px;
+  background-color: rgb(41, 41, 41);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 0 10px 0 rgb(19, 19, 19);
+}
+
+.keySB:hover {
+  cursor: pointer;
+  top: 2px;
+}
+
+.keySB:active {
+  top: 6px;
+}
+
+#doSB {
+  left: 65px;
+}
+
+#reSB {
+  left: 150px;
+}
+
+#miSB {
+  left: 325px;
+}
+
+#faSB {
+  left: 415px;
+}
+
+#solSB {
+  left: 500px;
+}
+
+.tampa {
+  position: absolute;
+  height: 20px;
+  width: 100%;
+  background-color: rgb(10, 10, 10);
+  box-shadow: 0 2px 5px black;
+}
+
+
+footer {
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+}
+
+footer p {
+  margin-top: 50px;
+  align-self: flex-end;
+}
